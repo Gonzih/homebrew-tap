@@ -7,7 +7,7 @@ cask "tachyon" do
   desc "Ambient usage rings for AI coding harnesses"
   homepage "https://tachyon.maksim.sh"
 
-  depends_on macos: ">= :sequoia"
+  depends_on macos: :sequoia
 
   app "Tachyon.app"
 
