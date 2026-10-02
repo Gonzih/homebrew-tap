@@ -1,6 +1,6 @@
 cask "tachyon" do
-  version "1.14"
-  sha256 "65594e048149845bb6a18524eb7119a105b1c47529cb169a89f7c73ba03a7fd6"
+  version "1.15"
+  sha256 "7d985c6dcfaf2710c5f99b0302be63c2160487dadf2b5cc18a9a0ffd7b8d5ccb"
 
   url "https://github.com/Gonzih/tachyon/releases/download/v#{version}/Tachyon-#{version}.zip"
   name "Tachyon"
