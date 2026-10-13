@@ -1,8 +1,8 @@
 class Kittens < Formula
   desc "AI coding agent harness"
   homepage "https://kittens.maksim.sh/"
-  url "https://static.crates.io/crates/kittens/kittens-0.2.1.crate"
-  sha256 "00ce3a18c3883b46e6b10eaf95563fe5eee164a1814f271f1ac5090efc4908b3"
+  url "https://static.crates.io/crates/kittens/kittens-0.3.0.crate"
+  sha256 "d67f0e7c5c79064685dfc7de32943998141b7afb245ffcef419dbd66c0fc27cd"
   license "MIT"
 
   depends_on "rust" => :build
