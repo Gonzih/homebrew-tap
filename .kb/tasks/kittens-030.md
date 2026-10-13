@@ -1,6 +1,6 @@
 # Publish Kittens 0.3.0 in the shared tap
 
-Status: verified; PR review and merge pending
+Status: complete
 
 Orientation 2026-10-13: `origin/main` is `5ecdf63bb165b1d1dbb8983ef7a6f21b2d3bfb5e`; clean isolated worktree `/Users/feral/mydev/homebrew-tap-kittens-030`, branch `release/kittens-0.3.0`. Existing formula downloads crates.io Kittens 0.2.1 with verified SHA256. Operator requested cutting and publishing the next Kittens release and previously authorized GitHub writes and automatic merge. Scope is the formula release update; Tachyon remains unchanged.
 
@@ -15,3 +15,5 @@ Next: native low-effort Executor updates only formula URL and checksum; Creator 
 Executor `/root/release_030_tap_executor` changed only the two formula lines. Creator inspected actual diff; Tachyon and README are unchanged. Ruby syntax, Homebrew style and diff check exit 0. First absolute-path info/audit/fetch attempts exit 1 because Homebrew requires a tap. Moved the same isolated Git worktree into `/opt/homebrew/Library/Taps/gonzih/homebrew-tap-kittens-030`; named candidate info, strict audit and fetch all exit 0. Metadata identifies 0.3.0 and the independently verified public checksum above. Failed and successful logs remain private in the Kittens release task.
 
 Kittens Creator also installed the published registry package with `cargo install kittens --version 0.3.0 --locked --debug` into a private prefix; version/help and all 12 actual CLI smoke tests passed. No claim of a new Homebrew Cellar install. Ready for exact diff review and normal PR merge under operator publication authorization.
+
+Delivery 2026-10-13: [PR2](https://github.com/Gonzih/homebrew-tap/pull/2) remote patch exactly matched reviewed local diff, with no hosted checks configured. Normal exact-head squash merge produced `8ed320b3169b1d87c0aec5f96e06789d397920a4`. Installed authoritative tap fast-forwarded to that commit; `brew info --json=v2`, strict audit and fetch for `gonzih/tap/kittens` all succeed and identify 0.3.0/public archive/exact checksum. Tachyon and README bytes remain unchanged. Candidate worktree moved back to `/Users/feral/mydev/homebrew-tap-kittens-030` after checks, leaving only the authoritative installed tap. [Kittens release](https://github.com/Gonzih/kittens/releases/tag/kittens-v0.3.0) and [public crate](https://crates.io/crates/kittens/0.3.0) are published.
